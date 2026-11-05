@@ -3,7 +3,7 @@
 Bu projede (Kura #21: Tarım x Öneri Motoru x Model Performansı), yapay zekâ araçlarından rehberlik, kod yazma ve SQL sorguları üretme aşamalarında destek alınmıştır.
 
 ## 1. Kullanılan Araç
-- **Araç:** Gemini 
+- **Araç:** Gemini 4
 
 ## 2. Yapay Zekânın Kullanıldığı Alanlar
 - **Kod ve SQL Üretimi:** Projede kullanılan SQL sorgularının yazılması ve veritabanı işlemlerinin kurgulanması.
