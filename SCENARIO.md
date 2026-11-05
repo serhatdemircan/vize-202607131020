@@ -12,7 +12,7 @@ Bir gübre ve tohum tedarikçisi, çiftçilerin tarla koşullarına ve mahsul t�
 * **YZ Bileşeni (Model Performans Karşılaştırması):** İki farklı öneri algoritmasının (Model A ve Model B) satın alma dönüşümü ve iade metrikleri üzerinden kıyaslanması. Dönem sonunda modelin önerdiği ürünle gerçek satın alma arasındaki ilişkiyi izleyen bir geri bildirim döngüsü kurulacaktır
 
 ## 4. Karıştırıcı Değişkenler (Confounding Variables) ve Riskler
-* **Satın Alınmama Durumu ≠ Kötü Öneri:** Bir önerinin satın alınmamış olması, o önerinin teknik olarak başarısız veya hatalı olduğu anlamına gelmez[cite: 32, 58]. Ürünün o anki stok durumu, piyasa fiyat artışları, nakit akışı, çiftçinin bütçesi veya mevsimsel hava şartları gibi dışsal faktörler de satın alma kararını doğrudan etkiler
+* **Satın Alınmama Durumu ≠ Kötü Öneri:** Bir önerinin satın alınmamış olması, o önerinin teknik olarak başarısız veya hatalı olduğu anlamına gelmez. Ürünün o anki stok durumu, piyasa fiyat artışları, nakit akışı, çiftçinin bütçesi veya mevsimsel hava şartları gibi dışsal faktörler de satın alma kararını doğrudan etkiler
 * **İade Kayıtlarının Yorumlanması:** İade tablosunda (`iadeler`) bir satışa ait satır bulunmaması, o ürünün iade edilmediği anlamına gelir; bu durum veri eksikliği (`NULL`) ile karıştırılmamalıdır
 
 ## 5. Tablo Adayları ve Kolonları
