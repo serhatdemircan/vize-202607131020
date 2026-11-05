@@ -1,5 +1,5 @@
 -- ==========================================
--- Hafta 5: Analitik Sorgular (sql/hafta-05.sql)
+-- Hafta 5: Analitik Sorgular (sql/hafta-05.sql).
 -- Öğrenci No: 202607131020 | Kura #21
 -- Senaryo: Tarım x Öneri Motoru x Model Performans Karşılaştırması
 -- ==========================================
