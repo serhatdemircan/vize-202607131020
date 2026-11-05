@@ -26,9 +26,9 @@ Bu veri seti temel bir öneri motorunun gerçek zemin doğruluğunu (ground trut
 - **Model Karşılaştırması:** Öneriler yaklaşık %50-%50 dağılımla `Model A` (1154 öneri) ve `Model B` (1046 öneri) tarafından üretilmiş olarak simüle edilmiştir.
 - **Tarih/Zaman Sütunu:** Analiz sorgularında haftalık trendlerin (`date_trunc`) hesaplanabilmesi için öneri tarihleri (`recommended_at`) 2026 yılı güz dönemi haftalarına dağıtılarak türetilmiştir.
 - **Satış ve Tutar Alanı (`sales` - 2032 satır):** 2200 önerinin 2032 tanesi için satın alma kaydı (`was_purchased`) ve işlem tutarı (`amount_try`) üretilmiş; 168 öneri ise henüz satış aşamasına geçmemiş (işlem kaydı oluşmamış) olarak bırakılmıştır.
-- **İade Kayıtları (`iadeler`):** Gerçekleşen satışların bir kısmı için iade nedeni (`return_reason`) ve iade tarihi (`returned_at`) türetilmiştir. İade edilmeyen ürünler için tabloda satır oluşturulmamış; bu durum eksik veri (`NULL`) değil, iadesiz tamamlanan başarılı satış olarak kabul edilmiştir.
+- **İade Kayıtları (`iadeler`):** Gerleşen satışların bir kısmı için iade nedeni (`return_reason`) ve iade tarihi (`returned_at`) türetilmiştir. İade edilmeyen ürünler için tabloda satır oluşturulmamış; bu durum eksik veri (`NULL`) değil, iadesiz tamamlanan başarılı satış olarak kabul edilmiştir.
 
 ## 4. Temizleme ve Doğrulama Adımları
 1. Ham veri `data/raw/Crop_recommendation.csv` dosyasına hiçbir şekilde elle müdahale edilmemiştir.
 2. Sayısal sütunlarda uç değer, negatif nem veya hatalı pH değerleri kontrol edilmiştir.
-3. Tutar sütunundaki para birimi (TL ve
+3. **Para Birimi ve Tutar Doğrulaması:** Ham veride yer alan tutar değerleri analiz ve modelleme süreçlerine uygun olarak Türk Lirası (`TRY`) bazında normalize edilmiştir. Uç değer analizleri yapılarak mantık dışı veya aşırı sapma gösteren tutarlar filtrelenmiş böylece modelin eğitim ve değerlendirme aşamalarında yanıltıcı finansal verilerden etkilenmesinin önüne geçilmiştir.
