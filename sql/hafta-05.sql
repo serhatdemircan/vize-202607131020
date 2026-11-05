@@ -71,7 +71,7 @@ SELECT
     ROUND(COUNT(i.id) * 100.0 / NULLIF(COUNT(s.id), 0), 2) AS return_rate_pct
 FROM recommendations r
 JOIN sales s ON r.id = s.recommendation_id
-LEFT JOIN iadeler i ON s.id = i.sale_id
+LEFT JOIN product_returns i ON s.id = i.sale_id
 WHERE s.was_purchased IS TRUE
 GROUP BY date_trunc('week', r.recommended_at)::date, r.model_name
 ORDER BY week_start, r.model_name;
