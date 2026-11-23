@@ -12,7 +12,7 @@
 
 **Kullandığım veritabanı:** [ ] `llm_ops` [x] `robot_fleet`
 
-**PR bağlantısı:** `https://github.com/<kullanici_adin>/vize_projesi/pull/1`
+**PR bağlantısı:** `https://github.com/serhatdemircan/vize-202607131020/pull/4`
 
 **Commit sayısı:** 3
 
